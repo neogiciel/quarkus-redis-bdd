@@ -1,0 +1,6 @@
+com\neogiciel\util\Trace.class
+com\neogiciel\redis\RedisCLI.class
+com\neogiciel\redis\RedisManager.class
+com\neogiciel\ApiController.class
+com\neogiciel\redis\RedisCLIImpl.class
+com\neogiciel\HomeController.class
