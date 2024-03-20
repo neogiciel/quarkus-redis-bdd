@@ -48,7 +48,7 @@ Le service est accessible sur http://localhost:8080
 **Manager d'appel à Redis**
 La mise en place de requête Redis se fait via des Aplles CLI bas Niveau
 
----
+```
 @Singleton
 public class RedisCLIImpl implements RedisCLI{
     
@@ -100,7 +100,6 @@ public class RedisCLIImpl implements RedisCLI{
         redisDS.execute("LPUSH",liste,value).toString();
     }
 
-
     /*
      * rPush(String liste, String value)
      */
@@ -114,7 +113,6 @@ public class RedisCLIImpl implements RedisCLI{
     public String  lRange(String liste, int debut, int fin) {
         String value = Integer.toString(debut)+" "+Integer.toString(fin);
         return redisDS.execute("LRANGE",liste,value).toString();
-
     }
 
     /*
@@ -156,7 +154,7 @@ public class RedisCLIImpl implements RedisCLI{
 
     /*
      * hGet(String set, int index) {
-     * HGET user:1 username # "John"
+     * HGET user:1 username "John"
      */
     public String  hGet(String set, int index, String key) {
         return redisDS.execute("HGET",set+":"+Integer.toString(index),key).toString();
@@ -172,4 +170,5 @@ public class RedisCLIImpl implements RedisCLI{
 
 }
 
----
+
+```
