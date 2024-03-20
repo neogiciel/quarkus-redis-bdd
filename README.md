@@ -14,7 +14,8 @@ Technologies utilisées:
 * Quarkus: 3.6.4
 ## Instalation
 ***
-Deploiement de Redis docker-compose<br>
+Deploiement de Redis docker-compose<br/>
+
 ```
 version: '3.3'
 
