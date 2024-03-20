@@ -130,16 +130,13 @@ public class RedisCLIImpl implements RedisCLI{
         String valueIndex = redisDS.execute("LINDEX",liste,Integer.toString(index)).toString();
         redisDS.execute("LREM",liste,Integer.toString(index),valueIndex);
      }
-
-
-   /*
+     /*
      * lLen(String liste)
      */
     public String  lLen(String liste) {
         return redisDS.execute("LLEN",liste).toString();
 
    }
-
     /*
      * hSet(String liste, int index, String key, String value) 
      * HSET user:1 username "John"
